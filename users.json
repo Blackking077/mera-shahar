@@ -1,0 +1,16 @@
+[
+ {
+  "id": "0e46ddddedf7",
+  "name": "IKRAM",
+  "username": "IKRAM",
+  "password": {
+   "salt": "bc10da1a969ddb3bdc84db4384eb2722",
+   "hash": "0dfc9f0d52bda885f2ee598dade46b42af47151774a018d0ee207762e47b29c7",
+   "iter": 120000
+  },
+  "state": "Delhi",
+  "city": "NANGLOI",
+  "bio": "",
+  "createdAt": 1792752170
+ }
+]

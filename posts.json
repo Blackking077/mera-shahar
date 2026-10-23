@@ -1,0 +1,298 @@
+[
+ {
+  "title": "Taj Mahal — Mohabbat ki Nishani",
+  "state": "Uttar Pradesh",
+  "city": "Agra",
+  "category": "jagah",
+  "author": "Aarav",
+  "likes": 128,
+  "image": "assets/taj.jpg",
+  "description": "Duniya ke 7 ajubon mein se ek! Shah Jahan ne apni begum Mumtaz Mahal ki yaad mein safed marble se banwaya tha. Subah suraj nikalte time Yamuna kinare se iska nazara dil chhu leta hai. Agra aao to Petha khana mat bhoolna!",
+  "id": "f894c8d09cf3",
+  "createdAt": 1791021349,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "896f343a7e",
+    "userId": null,
+    "author": "Meena Gupta",
+    "username": null,
+    "text": "Main pichle saal gayi thi, subah 6 baje wala nazara sach mein kamaal hai! 😍",
+    "createdAt": 1791039349
+   },
+   {
+    "id": "8390fabf83",
+    "userId": null,
+    "author": "Rahul Verma",
+    "username": null,
+    "text": "Agra ka petha aur bedai-jalebi bhi try karna sab log!",
+    "createdAt": 1791114949
+   }
+  ]
+ },
+ {
+  "title": "Hawa Mahal — 953 Khidkiyon wala Jaipur",
+  "state": "Rajasthan",
+  "city": "Jaipur",
+  "category": "jagah",
+  "author": "Priya Chauhan",
+  "likes": 96,
+  "image": "assets/hawa_mahal.jpg",
+  "description": "Jaipur ki pehchan! Is 5 manzila Jaipur mein 953 chhoti khidkiyan (jharokhe) hain, jinse hamesha thandi hawa aati rehti hai — isiliye naam pada 'Hawa Mahal'. Sham ko roshni mein ye aur bhi sundar dikhta hai.",
+  "id": "e903d777c366",
+  "createdAt": 1791194149,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": []
+ },
+ {
+  "title": "Golden Temple aur Duniya ka Sabse Bada Langar",
+  "state": "Punjab",
+  "city": "Amritsar",
+  "category": "jagah",
+  "author": "Simran Kaur",
+  "likes": 154,
+  "image": "assets/golden_temple.jpg",
+  "description": "Sri Harmandir Sahib mein roz lagbhag 50,000 logon ko muft langar khilaya jaata hai — bina kisi bhed-bhaav ke. Rat ko sarovar mein golden temple ka reflection dekhna ek alag hi sukh hai. Waheguru!",
+  "id": "ec6a533938f4",
+  "createdAt": 1791366949,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "09ba2eef38",
+    "userId": null,
+    "author": "Gurpreet Singh",
+    "username": null,
+    "text": "Langar ki dal-roti mein jo swad hai, wo kahin nahi milta. Waheguru 🙏",
+    "createdAt": 1791395749
+   },
+   {
+    "id": "b59f329654",
+    "userId": null,
+    "author": "Anita Sharma",
+    "username": null,
+    "text": "Rat ko sarovar wala view meri zindagi ka sabse shaant pal tha.",
+    "createdAt": 1791510949
+   }
+  ]
+ },
+ {
+  "title": "Kerala Backwaters — Houseboat ki Sair",
+  "state": "Kerala",
+  "city": "Alappuzha (Alleppey)",
+  "category": "prakriti",
+  "author": "Anjali Nair",
+  "likes": 87,
+  "image": "assets/kerala.jpg",
+  "description": "Nariyal ke ped, shaant paani aur chalti hui houseboat — Kerala ko 'God's Own Country' isiliye kehte hain. Houseboat par baithe-baithe garam-garam fish curry aur chawal ka mazaa hi kuch aur hai.",
+  "id": "91999b0648a8",
+  "createdAt": 1791539749,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "95440d43a2",
+    "userId": null,
+    "author": "Joseph Mathew",
+    "username": null,
+    "text": "Houseboat mein ek raat rukna zaroor, taaron wala aasmaan bhool nahi paoge ✨",
+    "createdAt": 1791582949
+   }
+  ]
+ },
+ {
+  "title": "Meenakshi Mandir — Rango ka Sheher",
+  "state": "Tamil Nadu",
+  "city": "Madurai",
+  "category": "jagah",
+  "author": "Karthik R.",
+  "likes": 73,
+  "image": "assets/madurai.jpg",
+  "description": "Madurai ka Meenakshi Mandir apne unche-unche rang-birange gopuram ke liye famous hai, jinpar hazaaron chhoti moortiyan bani hain. Mandir ke aas-paas ka bazaar raat bhar jag-mag rehta hai — Madurai sach mein 'sone na dene wala sheher' (Thoonga Nagaram) hai.",
+  "id": "3f48d6d0cd3c",
+  "createdAt": 1791712549,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": []
+ },
+ {
+  "title": "Gateway of India aur Mumbai ki Shaan",
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "category": "jagah",
+  "author": "Rohan Deshmukh",
+  "likes": 69,
+  "image": "assets/Gateway.jpg",
+  "description": "Arab Sagar ke kinare khada Gateway of India Mumbai ki pehchan hai. Sham ko yahan ki bheed, bhel-puri aur samundar ki hawa — poori Mumbai ek jagah mil jaati hai. Paas mein hi Vada Pav khana to banta hai!",
+  "id": "8fc71430dc3f",
+  "createdAt": 1791885349,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": []
+ },
+ {
+  "title": "Subah-e-Banaras — Varanasi Aarti",
+  "state": "Uttar Pradesh",
+  "city": "Varanasi",
+  "category": "tyohar",
+  "author": "Shivam Tripathi",
+  "likes": 142,
+  "image": "assets/Varanasi.jpg",
+  "description": "Subah 5 baje naav par baithe kar, Varanasi par hone wali aarti aur ugta suraj... Banaras duniya ke sabse purane sheheron mein se ek hai. Yahan ki galiyan, kachori-sabzi aur Banarasi paan — sab kuch khaas hai. Har Har Mahadev!",
+  "id": "90e1a97e20c8",
+  "createdAt": 1792058149,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "d27bc01649",
+    "userId": null,
+    "author": "Deepak Yadav",
+    "username": null,
+    "text": "Har Har Mahadev! 🙏 Assi Ghats ki subah aur garam kachori — swarg yahi hai.",
+    "createdAt": 1792068949
+   }
+  ]
+ },
+ {
+  "title": "Assam ke Chai Bagaan",
+  "state": "Assam",
+  "city": "Dibrugarh",
+  "category": "prakriti",
+  "author": "Bornali Das",
+  "likes": 58,
+  "image": "assets/assam.jpg",
+  "description": "Aap jo subah ki chai peete ho, uski patti aati hai yahan se! Dibrugarh ko 'Bharat ki Chai Rajdhani' kehte hain. Door-door tak hare-bhare chai ke bagaan aur beech mein Brahmaputra nadi — man khush ho jaata hai.",
+  "id": "62fd7f65a286",
+  "createdAt": 1792230949,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": []
+ },
+ {
+  "title": "Litti Chokha — Bihar ka Swad",
+  "state": "Bihar",
+  "city": "Patna",
+  "category": "khana",
+  "author": "Vikas Kumar",
+  "likes": 111,
+  "image": null,
+  "description": "Sattu bhari hui litti ko koyale par seka jaata hai, upar se desi ghee, saath mein baingan-tamatar ka chokha. Ek baar kha liya to petrol-diesel sab bhool jaoge! Bihar aao, litti chokha khao, dil khush karke jao.",
+  "id": "e9a32453ffb3",
+  "createdAt": 1792317349,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "e36e3f99fd",
+    "userId": null,
+    "author": "Sunita Devi",
+    "username": null,
+    "text": "Ghee mein doobi litti... padhte hi muh mein paani aa gaya! 😋",
+    "createdAt": 1792338949
+   },
+   {
+    "id": "1e9d6a5074",
+    "userId": null,
+    "author": "Amit Kumar",
+    "username": null,
+    "text": "hamare yahan to ravivaar matlab litti chokha hi hota hai!",
+    "createdAt": 1792389349
+   },
+   {
+    "id": "086ba46897",
+    "userId": null,
+    "author": "Farhan Dar",
+    "username": null,
+    "text": "Bihar kabhi gaya nahi, par ye post padhkar jaane ka man kar gaya.",
+    "createdAt": 1792425349
+   }
+  ]
+ },
+ {
+  "title": "Durga Puja — Kolkata ka Sabse Bada Tyohar",
+  "state": "West Bengal",
+  "city": "Kolkata",
+  "category": "tyohar",
+  "author": "Sourav Banerjee",
+  "likes": 134,
+  "image": null,
+  "description": "Durga Puja ke 5 din poora Kolkata jaag jaata hai! Har gali mein alag theme ke sundar pandal, dhak ki awaaz, aur Rosogolla-Mishti Doi ka swad. UNESCO ne ise World Heritage ka darja bhi diya hai.",
+  "id": "e13369e96e4a",
+  "createdAt": 1792403749,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "8e3e87997b",
+    "userId": null,
+    "author": "Priyanka Das",
+    "username": null,
+    "text": "Pandal ghumna, dhak ki thaap aur bhog ki khichdi — Puja matlab emotions! ❤️",
+    "createdAt": 1792436149
+   }
+  ]
+ },
+ {
+  "title": "Navratri Garba — Gujarat ki Raatein",
+  "state": "Gujarat",
+  "city": "Ahmedabad",
+  "category": "tyohar",
+  "author": "Hetal Patel",
+  "likes": 92,
+  "image": null,
+  "description": "9 raatein, hazaaron log, ek saath Garba! Rang-birangi chaniya choli pehen kar poori raat nritya hota hai. Saath mein Dhokla, Fafda-Jalebi... Navratri mein Gujarat sona hi bhool jaata hai!",
+  "id": "0eaa163409c7",
+  "createdAt": 1792490149,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "14b724a05a",
+    "userId": null,
+    "author": "Kom",
+    "username": null,
+    "text": "9 raatein bina thake Garba kiya tha pichli baar! Fafda-jalebi subah 4 baje bhi milti hai 😄",
+    "createdAt": 1792515349
+   }
+  ]
+ },
+ {
+  "title": "Dal Lake ke Shikare",
+  "state": "Jammu and Kashmir",
+  "city": "Srinagar",
+  "category": "prakriti",
+  "author": "Farhan Dar",
+  "likes": 105,
+  "image": null,
+  "description": "'Dharti ka Swarg' Kashmir! Dal Lake mein shikare ki sair, paani par tairti sabzi-mandi, aur aas-paas barfeeli pahadiyaan. Sham ko Kahwa chai peete-peete sunset dekhna zindagi bhar yaad rehta hai.",
+  "id": "1cd4cf7b0b82",
+  "createdAt": 1792576549,
+  "likedBy": [],
+  "authorId": null,
+  "username": null,
+  "comments": [
+   {
+    "id": "1b9714a475",
+    "userId": null,
+    "author": "Sana Mir",
+    "username": null,
+    "text": "Shikare wale bhaiya ki kahani sunna, Dal Lake ka asli mazaa wahi hai.",
+    "createdAt": 1792590949
+   }
+  ]
+ }
+]
