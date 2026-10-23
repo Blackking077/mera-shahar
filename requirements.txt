@@ -1,0 +1,3 @@
+# Is website ko koi bahari Python library nahi chahiye.
+# Sirf Python ke saath aane wali standard library use hoti hai.
+# (ye file sirf isliye hai taaki hosting wale Python pehchan lein.)

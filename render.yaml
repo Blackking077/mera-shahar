@@ -1,0 +1,12 @@
+# Render.com ke liye taiyaar setting (Blueprint)
+# Render par "New + -> Blueprint" choose karke ye repo doge to settings apne aap bhar jaayengi.
+services:
+  - type: web
+    name: mera-shahar-meri-pehchan
+    runtime: python
+    plan: free
+    buildCommand: echo "Koi library nahi chahiye - sirf Python ki standard library hai"
+    startCommand: python3 server.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4

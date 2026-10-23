@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mera Shahar, Meri Pehchan — Apne Gaon-Shahar ki Famous Cheez</title>
+<meta name="description" content="India ke har Rajya ke log apne gaon aur shahar ki famous cheez photo ke saath share karte hain. Khana, jagah, tyohar, kala — apna account Bana, post karo, comment karo!">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<div class="tricolor"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a class="logo" href="#">
+      <span class="logo-mark" aria-hidden="true">🌿</span>
+      <span class="logo-text">Mera <b>Shahar</b><small>meri pehchan • mera gaon, mera garv</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#naksha">🗺️ Naksha</a>
+      <a href="#states">Rajya</a>
+      <a href="#feed">Posts</a>
+      <span id="authArea" class="auth-area"></span>
+      <button class="btn btn-primary" onclick="startPost()">➕ Apni Post Dalein</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="hero-badge">🇮🇳 मेरा Shahar, मेरी Pehchan • 28 Rajya • 8 UT</div>
+      <h1>Apne <span class="hl-green">Gaon-Shahar</span> ki<br>Famous Cheez,<br><span class="hl-leaf">Puri Duniya</span> ko Dikhao!</h1>
+      <p class="hero-sub">Har gaon, har shahar mein kuch khaas chhupa hai — koi lajawab khana, koi purani jagah, koi rang-biranga tyohar. <b>Apna muft account Bana</b>, photo ke saath us Khaas baat ko post karo aur apne ilaake ka naam roshan karo!</p>
+      <div class="hero-search">
+        <input id="heroSearch" type="text" placeholder="🔍 Kuch to search karein... jaise 'Litti', 'Taj Mahal', 'Banaras'">
+        <button class="btn btn-primary" onclick="applyHeroSearch()">Dhoondhein</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b id="statPosts">–</b><span>Total Posts</span></div>
+        <div class="stat"><b id="statStates">–</b><span>Rajya/UT Cover</span></div>
+        <div class="stat"><b id="statCities">–</b><span>Gaon-Shahar</span></div>
+        <div class="stat"><b id="statComments">–</b><span>Comments</span></div>
+      </div>
+    </div>
+    <div class="hero-photos" aria-hidden="true">
+      <img class="hp hp1" src="assets/taj.jpg" alt="">
+      <img class="hp hp2" src="assets/kerala.jpg" alt="">
+      <img class="hp hp3" src="assets/Varanasi.jpg" alt="">
+      <img class="hp hp4" src="assets/hawa_mahal.jpg" alt="">
+      <div class="hero-chip-floating">❤️ <span id="statLikes">–</span> likes mil chuke!</div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="container">
+  <div class="cat-row" id="catChips">
+    <button class="chip active" data-cat="all">🌏 Sab Kuch</button>
+    <button class="chip" data-cat="khana">🍛 Khana</button>
+    <button class="chip" data-cat="jagah">🏛️ Famous Jagah</button>
+    <button class="chip" data-cat="tyohar">🎉 Tyohar &amp; Mela</button>
+    <button class="chip" data-cat="kala">🎨 Kala &amp; Hunar</button>
+    <button class="chip" data-cat="prakriti">🌄 Prakriti</button>
+    <button class="chip" data-cat="other">✨ Kuch Aur Khaas</button>
+  </div>
+</section>
+
+<!-- INDIA MAP -->
+<section class="container section" id="naksha">
+  <div class="section-head">
+    <div>
+      <h2>🗺️ India ke Nakshe par Apna Rajya Chunein</h2>
+      <p>Nakshe mein kisi bhi Rajya par <b>click</b> karo — us Rajya ki saari posts neeche dikh jaayengi. Jitna gehra hara rang, utni zyada posts!</p>
+    </div>
+  </div>
+  <div class="map-wrap">
+    <div class="map-box">
+      <svg id="indiaMap" role="img" aria-label="India ka naksha — Rajya chunne ke liye click karein"></svg>
+      <div id="mapTooltip" class="map-tooltip hidden"></div>
+      <div class="map-legend">
+        <span>Kam posts</span>
+        <span class="sw" style="background:#e9f4e1"></span>
+        <span class="sw" style="background:#c9e7b9"></span>
+        <span class="sw" style="background:#9ed48d"></span>
+        <span class="sw" style="background:#63b968"></span>
+        <span class="sw" style="background:#2f9e44"></span>
+        <span>Zyada posts</span>
+      </div>
+      <p class="map-note">🇮🇳 ye naksha <b>Bharat ki Adhikarik seemaon (Survey of India)</b> ke anusaar hai — PoK, Gilgit-Baltistan aur Aksai Chin Bharat ke Abhinn ang ke roop mein dikhaye gaye hain.</p>
+    </div>
+    <aside class="map-panel" id="mapPanel">
+      <div class="map-panel-empty">
+        <div class="step-emoji">👆</div>
+        <h3>Ek Rajya chunein</h3>
+        <p>Nakshe par kisi Rajya ko dabao — yahan us Rajya ki jaankari aur mashhoor posts dikhengi.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- STATES LIST -->
+<section class="container section" id="states">
+  <div class="section-head">
+    <div>
+      <h2>📋 Saare Rajya aur UT (List)</h2>
+      <p>Naksha nahi chalana? Koi baat nahi — yahan list se Rajya chunein.</p>
+    </div>
+    <input id="stateSearch" class="state-search" type="text" placeholder="🔍 Rajya ka naam likhein...">
+  </div>
+  <div class="states-grid" id="statesGrid"></div>
+</section>
+
+<!-- FEED -->
+<section class="container section" id="feed">
+  <div class="section-head">
+    <div>
+      <h2>📸 Logon ki Posts</h2>
+      <p id="feedSub">Poore Bharat se aayi kahaniyaan — post par click karke pura padhein aur comment karein.</p>
+    </div>
+    <div class="feed-tools">
+      <input id="feedSearch" class="state-search" type="text" placeholder="🔍 Post dhoondhein...">
+      <select id="sortSelect" class="sort-select">
+        <option value="new">🆕 Nayi post pehle</option>
+        <option value="likes">❤️ Sabse zyada pasand</option>
+        <option value="comments">💬 Sabse zyada charcha</option>
+        <option value="old">🕰️ Purani pehle</option>
+      </select>
+    </div>
+  </div>
+  <div id="activeFilter" class="active-filter hidden">
+    <span id="activeFilterText"></span>
+    <button onclick="clearStateFilter()" title="Filter hatayein">✕ Sab dikhao</button>
+  </div>
+  <div class="feed-grid" id="feedGrid"><div class="loading">Posts load ho rahi hain... ⏳</div></div>
+  <div id="feedEmpty" class="empty hidden">
+    <div class="empty-emoji">🌱</div>
+    <h3>Yahan abhi koi post nahi hai</h3>
+    <p>Pehli post aap hi dalo! Apne gaon-shahar ki famous cheez duniya ko dikhao.</p>
+    <button class="btn btn-primary" onclick="startPost()">➕ Pehli Post Dalein</button>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="kaise">
+  <div class="container">
+    <h2>✍️ Shuruaat Kaise Karein? Bas 3 Steps!</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-emoji">🪪</div>
+        <h3>Muft Account Bana</h3>
+        <p>Sirf naam, ek username aur password — 30 second mein aapka apna profile taiyaar. Koi OTP, koi fees nahi!</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-emoji">📷</div>
+        <h3>Photo + Kahani Dalein</h3>
+        <p>Apne gaon/shahar ki famous cheez ki photo lagao aur 4-5 line mein batao ki ye kyun khaas hai.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-emoji">💬</div>
+        <h3>Like aur Comment Paao</h3>
+        <p>Aapki post turant sabko dikhegi. Log like karenge, comment karenge aur WhatsApp par share karenge!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD POST FORM -->
+<section class="container section" id="add">
+  <div class="form-card">
+    <div class="form-head">
+      <h2>➕ Apni Post Dalein</h2>
+      <p>Apne gaon ya shahar ki pehchan poore Bharat ko dikhao. (<span class="star">*</span> wale hisse bharna zaroori hai)</p>
+    </div>
+    <div id="postAsBanner" class="post-as"></div>
+    <form id="postForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="fState">🗺️ Rajya / UT <span class="star">*</span></label>
+          <select id="fState" required></select>
+        </div>
+        <div class="field">
+          <label for="fCity">📍 Gaon / Shahar <span class="star">*</span></label>
+          <input id="fCity" type="text" maxlength="60" required placeholder="Jaise: Mera gaon Rampur">
+        </div>
+        <div class="field">
+          <label for="fCategory">🏷️ Category <span class="star">*</span></label>
+          <select id="fCategory">
+            <option value="khana">🍛 Khana (famous dish/mithaas)</option>
+            <option value="jagah">🏛️ Famous Jagah (mandir, kila, imaarat)</option>
+            <option value="tyohar">🎉 Tyohar / Mela</option>
+            <option value="kala">🎨 Kala &amp; Hunar (haath ki kala, kapda, geet)</option>
+            <option value="prakriti">🌄 Prakriti (nadi, pahad, jheel)</option>
+            <option value="other">✨ Kuch Aur Khaas</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fTitle">⭐ Famous Cheez ka Naam (Title) <span class="star">*</span></label>
+          <input id="fTitle" type="text" maxlength="80" required placeholder="Jaise: Hamare gaon ke Vishv-Prasiddh Pede">
+        </div>
+        <div class="field full">
+          <label for="fDesc">📖 Uske Baare Mein Likhein <span class="star">*</span> <span class="count" id="descCount">0 / 1500</span></label>
+          <textarea id="fDesc" rows="4" maxlength="1500" required placeholder="Batao ki ye cheez kyun famous hai, uski kya kahani hai, log wahan kyun aate hain... Jitna dil se likhoge, utna logon ko pasand aayega!"></textarea>
+        </div>
+        <div class="field full">
+          <label>🖼️ Photo (chaho to)</label>
+          <div class="dropzone" id="dropZone">
+            <input type="file" id="fImage" accept="image/*" hidden>
+            <div id="dropHint">
+              <div class="dz-emoji">📸</div>
+              <p><b>Photo yahan kheech kar chhodein</b> ya click karke chunein</p>
+              <small>JPG / PNG — photo apne aap chhoti ho jaayegi, tension nahi!</small>
+            </div>
+            <div id="imgPreviewWrap" class="hidden">
+              <img id="imgPreview" alt="Aapki photo ka preview">
+              <button type="button" class="btn btn-small" id="removeImgBtn">✕ Photo Hatayein</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="formError" class="form-error hidden"></p>
+      <button type="submit" class="btn btn-primary btn-big" id="submitBtn">🚀 Publish Karein — Duniya ko Dikhao!</button>
+      <p class="form-note">ℹ️ Kripya apna phone number ya personal jaankari post mein na likhein.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-big">Mera Shahar, <b>Meri Pehchan</b> 🌿🇮🇳</p>
+    <p>Har Gaon, Har Shahar ki Apni Kahani • Made with ❤️ in India</p>
+    <p class="footer-small">Apne ilaake ka naam roshan karo — ek post se shuruaat karo!</p>
+  </div>
+  <div class="tricolor bottom"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+</footer>
+
+<!-- POST DETAIL MODAL -->
+<div class="modal-overlay hidden" id="detailModal">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" onclick="closeModal()" title="Band karein">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- LOGIN / REGISTER MODAL -->
+<div class="modal-overlay hidden" id="authModal">
+  <div class="modal modal-small" role="dialog" aria-modal="true">
+    <button class="modal-close dark" onclick="closeAuth()" title="Band karein">✕</button>
+    <div class="auth-body">
+      <div class="auth-emoji">🌿🪪</div>
+      <h2 id="authTitle">Namaste! Login Karein</h2>
+      <p class="auth-sub" id="authSub">Post dalne, like aur comment karne ke liye login zaroori hai.</p>
+      <div class="auth-tabs">
+        <button id="tabLogin" class="auth-tab active" onclick="showAuthTab('login')">Login</button>
+        <button id="tabRegister" class="auth-tab" onclick="showAuthTab('register')">Naya Account</button>
+      </div>
+
+      <form id="loginForm">
+        <div class="field"><label for="lUsername">👤 Username</label>
+          <input id="lUsername" type="text" maxlength="20" placeholder="Jaise: saurabh_12" autocomplete="username"></div>
+        <div class="field"><label for="lPassword">🔒 Password</label>
+          <input id="lPassword" type="password" placeholder="Aapka password" autocomplete="current-password"></div>
+        <p class="form-error hidden" id="loginError"></p>
+        <button type="submit" class="btn btn-primary btn-big" id="loginBtn">Login Karein</button>
+        <p class="form-note">Account nahi hai? Upar <b>"Naya Account"</b> par tap karo — muft hai!</p>
+      </form>
+
+      <form id="registerForm" class="hidden">
+        <div class="field"><label for="rName">🙋 Aapka Pura Naam</label>
+          <input id="rName" type="text" maxlength="40" placeholder="Jaise: Priya Sharma"></div>
+        <div class="field"><label for="rUsername">👤 Username chunein <small>(login ke liye)</small></label>
+          <input id="rUsername" type="text" maxlength="20" placeholder="sirf english akshar, number, _ (3-20)" autocomplete="username"></div>
+        <div class="field"><label for="rPassword">🔒 Password chunein</label>
+          <input id="rPassword" type="password" placeholder="kam se kam 4 akshar — yaad rakhna!" autocomplete="new-password"></div>
+        <div class="form-grid">
+          <div class="field"><label for="rState">🗺️ Aapka Rajya</label><select id="rState"></select></div>
+          <div class="field"><label for="rCity">📍 Gaon / Shahar</label>
+            <input id="rCity" type="text" maxlength="60" placeholder="Jaise: Rampur"></div>
+        </div>
+        <p class="form-error hidden" id="registerError"></p>
+        <button type="submit" class="btn btn-primary btn-big" id="registerBtn">🎉 Muft Account Bana</button>
+        <p class="form-note">⚠️ Password bhool gaye to wapas nahi milega (OTP/email system nahi hai) — koi asaan-sa password note kar lo.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE MODAL -->
+<div class="modal-overlay hidden" id="profileModal">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close dark" onclick="closeProfile()" title="Band karein">✕</button>
+    <div id="profileContent"></div>
+  </div>
+</div>
+
+<div class="toast hidden" id="toast"></div>
+
+<button class="fab" onclick="startPost()" title="Apni post dalein">➕<span>Post Dalein</span></button>
+
+<script src="app.js?v=5"></script>
+</body>
+</html>
